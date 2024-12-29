@@ -21,17 +21,6 @@ int main()
     string s;
     cout<<"Enter the string to remove the palindrome words and print : ";
     getline(cin, s);
-    
-    Given a sentence of string, in that remove the palindrome words and print the
-remaining.
-Input:
-He did a good deed
-Output:
-He good
-Input:
-Hari speaks malayalam
-Output:
-Hari speaks
 
     string word="";
     
