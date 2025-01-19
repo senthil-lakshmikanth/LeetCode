@@ -19,6 +19,34 @@
 
 using namespace std;
 
+int main() // Efficient Traverse only once.
+{
+    int price[6] = {7,1,5,3,6,4};
+    // int price[5] = {7,6,4,3,1};
+    
+    int buy=price[0];
+    int sell, max_profit=0;
+    for(int i=0; i<6; i++)
+    {
+       if(price[i] < buy)
+           buy = price[i];
+           
+       int profit = price[i] - buy;
+       
+       if(profit > max_profit)
+       {
+           max_profit = profit;
+           sell = price[i];
+       }
+    }
+    
+    cout<<"Buy stock at "<<buy<<" and sell at "<<sell<<". Profit : "<<max_profit;
+    
+    return 0;
+}
+
+//---------------------------------------------------------------------------------------------------
+
 int main() 
 {
     int array[6] = {7,1,5,3,6,4};
