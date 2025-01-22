@@ -23,10 +23,16 @@ bool isSubStr(string String, string Substr)
             Substr_index++;
         }
         else
-        {
-            count=0;
-            Substr_index=0;
-        }
+            if(Substr[0]==String[i])  // "tesst" , "st" case will fail if this condition is not there.
+            {
+                count=1;
+                Substr_index=1;
+            }
+            else
+            {
+                count=0;
+                Substr_index=0;
+            }
     if(flag==1)
         cout<<Substr<<" is a substring"<<endl;
     else 
