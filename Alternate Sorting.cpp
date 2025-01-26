@@ -1,4 +1,4 @@
-// Online C++ compiler to run C++ program online
+// Online C++ compiler to run C++ program onlin
 
 // Sample Input – Alternate Sorting
 // Input: {1, 2, 3, 4, 5, 6, 7}
