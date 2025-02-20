@@ -3,12 +3,10 @@ class Solution
 public:
     int missingNumber(vector<int>& nums) 
     {
-        int size = nums.size();
-        unordered_set <int> nums_set (nums.begin(), nums.end());
-
-        for(int i = 0; i <= size; i++)
-            if(nums_set.find(i) == nums_set.end())
-                return i;
-        return 0;
+        int sum_of_numbers = (nums.size() * (nums.size() + 1)) / 2; 
+        for(int num : nums)
+            sum_of_numbers -= num;
+        
+        return  sum_of_numbers; 
     }
 };
