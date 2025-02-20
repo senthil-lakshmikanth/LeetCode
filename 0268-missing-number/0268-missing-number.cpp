@@ -3,10 +3,10 @@ class Solution
 public:
     int missingNumber(vector<int>& nums) 
     {
-        int sum_of_numbers = (nums.size() * (nums.size() + 1)) / 2; 
+        int sum = 0; 
         for(int num : nums)
-            sum_of_numbers -= num;
+            sum += num;
         
-        return  sum_of_numbers; 
+        return (nums.size() * (nums.size() + 1)) / 2 - sum;  // S(n) = n * (n + 1) / 2
     }
 };
