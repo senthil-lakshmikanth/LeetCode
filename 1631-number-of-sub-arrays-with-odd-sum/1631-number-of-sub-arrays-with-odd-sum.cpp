@@ -15,14 +15,15 @@ public:
             prefix_sum += num;
             if(prefix_sum % 2 == 1)
             {
-                result = (result + even_count) % modulo;
+                result = result + even_count;
                 odd_count++;
             }
             else
             {
-                result = (result + odd_count) % modulo;
+                result = result + odd_count;
                 even_count++;
             }
+            result = result % modulo;
         }
         return result;
     }
