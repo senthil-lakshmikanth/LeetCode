@@ -6,18 +6,18 @@ public:
     int m, n;
     vector <vector <int> > dp;
 
-    int LargestCommonSubsequence(int i, int j)
+    void LargestCommonSubsequence(int i, int j)
     {
-        if(i >= m || j >= n) return 0;
-
-        if (dp[i][j] != 0) return dp[i][j];
-
-        if(str1[i] == str2[j])
-            dp[i][j] = 1 + LargestCommonSubsequence(i + 1, j + 1);
-        else
-            dp[i][j] = max(LargestCommonSubsequence(i, j + 1), LargestCommonSubsequence(i + 1, j));
-            
-        return dp[i][j];
+        for(int i = m - 1; i >= 0; i--)
+        {
+            for(int j = n - 1; j >= 0; j--)
+            {
+                if(str1[i] == str2[j])
+                    dp[i][j] = 1 + dp[i+1][j+1];
+                else
+                    dp[i][j] = max(dp[i][j+1], dp[i+1][j]);
+            }
+        }
     }
 
     string shortestCommonSupersequence(string text1, string text2) 
