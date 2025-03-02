@@ -4,13 +4,13 @@ public:
     vector<int> topKFrequent(vector<int>& nums, int k) 
     {
         unordered_map <int, int> frequency;
-        for(int num : nums)
+        for(int& num : nums)
         {
             frequency[num]++;
         }
 
         vector <vector <int>> bucket (nums.size() + 1);        
-        for(auto pair : frequency)
+        for(auto& pair : frequency)
         {
             bucket[pair.second].push_back(pair.first);
         }
@@ -20,7 +20,7 @@ public:
         {
             if(!bucket[freq_count].empty())
             {
-                for(int num : bucket[freq_count])
+                for(int& num : bucket[freq_count])
                 {
                     result.push_back(num);
                     if(result.size() == k) 
