@@ -3,22 +3,14 @@
 <p> Please implement <code>encode</code> and <code>decode</code> </p>
 
 <p>&nbsp;</p>
+
 <p><strong class="example">Example 1:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io"> [&quot;leet&quot;,&quot;code&quot;,&quot;love&quot;,&quot;you&quot;]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">[&quot;leet&quot;,&quot;code&quot;,&quot;love&quot;,&quot;you&quot;]</span></p>
-</div>
-
-
-<p><strong class="example">Example 2:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io"> [&quot;we&quot;,&quot;say&quot;,&quot;:&quot;,&quot;yes&quot;]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io"> [&quot;we&quot;,&quot;say&quot;,&quot;:&quot;,&quot;yes&quot;]</span></p>
-</div>
+<pre><strong>Input:</strong> ["neet","code","love","you"]
+<strong>Output:</strong> ["neet","code","love","you"]
+</pre><p><strong class="example">Example 2:</strong></p>
+<pre><strong>Input:</strong> ["we","say",":","yes"]
+<strong>Output:</strong> ["we","say",":","yes"]
+</pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
