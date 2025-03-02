@@ -1,4 +1,6 @@
-<h2><a href="https://leetcode.com/problems/encode-and-decode-strings">271. Encode and Decode Strings</a></h2><h3>Medium</h3><hr><p>Please implement <code>encode</code> and <code>decode</code> </p>
+<h2><a href="https://leetcode.com/problems/encode-and-decode-strings">271. Encode and Decode Strings</a></h2><h3>Medium</h3><hr><p>Design an algorithm to encode a list of strings to a single string. The encoded string is then decoded back to the original list of strings.</p>
+
+<p> Please implement <code>encode</code> and <code>decode</code> </p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
