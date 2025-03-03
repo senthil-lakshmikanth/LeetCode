@@ -3,7 +3,7 @@ class Solution
 public:
     vector<int> pivotArray(vector<int>& nums, int pivot) 
     {
-        unordered_map <int, int> pivot_frequency;
+        int pivot_frequency = 0;;
 
         vector <int> result;
 
@@ -13,11 +13,14 @@ public:
                 result.push_back(num);
             else
                 if(num == pivot)
-                    pivot_frequency[pivot]++;
+                    pivot_frequency++;
         }
 
-        for(int i = 0; i < pivot_frequency[pivot]; i++)
+        while(pivot_frequency)
+        {
             result.push_back(pivot);
+            pivot_frequency--;
+        }
 
         for(int num : nums)
         {
