@@ -19,7 +19,7 @@ public:
                 count++;
             else
                 count =  1;
-            if(count > largest) largest = count;
+            largest = max(largest, count);
         }
 
         return largest;
