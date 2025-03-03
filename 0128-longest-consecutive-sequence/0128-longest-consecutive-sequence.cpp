@@ -3,23 +3,21 @@ class Solution
 public:
     int longestConsecutive(vector<int>& nums) 
     {
-        if(nums.empty()) return 0;
+        unordered_set <int> lookup (nums.begin(), nums.end());
 
-        sort(nums.begin(), nums.end());
+        int largest = 0;
 
-        int count = 1;
-        int largest = 1;
-
-        for(int i = 0; i < nums.size() - 1; i++)
+        for(int num : lookup)
         {
-            if(nums[i] == nums[i+1]) 
-                continue;
-            
-            if(nums[i + 1] == nums[i] + 1)
-                count++;
-            else
-                count =  1;
-            largest = max(largest, count);
+            if(lookup.find(num - 1) == lookup.end()) // If there is no element less than 'num', then 'num' is the starting element.
+            {
+                int count = 1;
+                while(lookup.find(num + count) != lookup.end())
+                {
+                    count++;
+                }
+                largest = max(largest, count);
+            }
         }
 
         return largest;
