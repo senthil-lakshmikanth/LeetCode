@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0001-two-sum) |
 | [0049-group-anagrams](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0049-group-anagrams) |
+| [0128-longest-consecutive-sequence](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0238-product-of-array-except-self](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0268-missing-number](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -22,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0001-two-sum) |
 | [0049-group-anagrams](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0049-group-anagrams) |
+| [0128-longest-consecutive-sequence](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0268-missing-number](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0905-length-of-longest-fibonacci-subsequence) |
@@ -140,4 +142,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0347-top-k-frequent-elements) |
+## Union Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
