@@ -3,20 +3,20 @@ class Solution
 public:
     bool checkPowersOfThree(int n) 
     {
-        int root = pow(n, 0.3);
-        return backTrack(0, 0, n);
+        int root = log(n) / log(3);
+        return backTrack(0, 0, n, root);
     }
 
-    bool backTrack(int sum, int i, int& n)
+    bool backTrack(int sum, int i, int& n, int& root)
     {
         if(sum == n)
             return true;
 
-        if(sum > n || pow(3, i) > n)
+        if(sum > n || i > root)
             return false;
 
         int power = pow(3, i);
         
-        return backTrack(sum + power, i + 1, n) || backTrack(sum, i + 1, n);
+        return backTrack(sum + power, i + 1, n, root) || backTrack(sum, i + 1, n, root);
     }
 };
