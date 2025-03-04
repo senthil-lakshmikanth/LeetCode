@@ -12,7 +12,7 @@ public:
         if(sum == n)
             return true;
 
-        if(sum > n || i > root)
+        if(i > root)
             return false;
 
         int power = pow(3, i);
