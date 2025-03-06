@@ -3,28 +3,25 @@ class Solution
 public:
     bool isValid(string s) 
     {
-        stack <char> bracket;
+        stack <char> brackets;
 
-        for(int i = 0; i < s.size(); i++)
+        unordered_map <char, char> pair = {{')', '('}, {']', '['}, {'}', '{'}};
+
+        for(char c : s)
         {
-            if(s[i] == '(' || s[i] == '[' || s[i] == '{')
+            if(pair.count(c))
             {
-                bracket.push(s[i]);
-                continue;
+                if(brackets.empty() || brackets.top() != pair[c])
+                    return false;
+                
+                brackets.pop();
             }
             else
             {
-                if(s[i] == ')' && !bracket.empty() && bracket.top() == '(')
-                {    bracket.pop(); continue;   }
-                if(s[i] == ']' && !bracket.empty() && bracket.top() == '[')
-                {    bracket.pop(); continue;   }
-                if(s[i] == '}' && !bracket.empty() && bracket.top() == '{')
-                {    bracket.pop(); continue;   }
-
-                return false;          
+                brackets.push(c);
             }
         }
         
-        return bracket.empty(); // return true; if the stack is empty.
+        return brackets.empty(); // return true; if the stack is empty.
     }
 };
