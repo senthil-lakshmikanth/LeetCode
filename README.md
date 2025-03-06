@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0125-valid-palindrome) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
@@ -160,4 +161,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3227-find-missing-and-repeated-values](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
