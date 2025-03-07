@@ -2,38 +2,53 @@ class Solution
 {
 public:
     vector<int> closestPrimes(int left, int right) 
-    {
-        vector <int> result = {-1, -1}; 
-        
-        int num1 = 0, num2 = 0;
-        int minimum = INT_MAX;
-        
-        for(int i = right; i >= left; i--)
-        {
-            if(isPrime(i))
-            {
-                num1 = i;
-                if(num2 != 0 && num2 - num1 <= minimum)
-                {
-                    minimum = num2 - num1;
-                    result[0] = num1;
-                    result[1] = num2;
-                }
-                num2 = num1;
-            }
-        }    
+    {        
+        vector <bool> isPrime (right + 1, true);
+        SieveofEratosthenes(isPrime);
 
-        return result;
+        vector <int> prime;
+        for(int i = left; i <= right; i++)
+            if(isPrime[i])
+                prime.push_back(i);
+        
+        int minimum = INT_MAX;
+        int num1 = -1, num2 = -1;
+
+        int n = prime.size(); // Writing like this is a good practise. Read Note.
+        for(int i = 0; i < n - 1; i++)
+        {
+            if(prime[i + 1] - prime[i] < minimum)
+            {
+                minimum = prime[i + 1] - prime[i];
+                num1 = prime[i];
+                num2 = prime[i + 1];
+            }
+        }
+        return {num1, num2};
     }
 
-    bool isPrime(int n)
+    void SieveofEratosthenes (vector <bool>& isPrime)
     {
-        if (n <= 1) return false;
-        for(int i = 2; i <= sqrt(n); i++)
+        isPrime[0] = false;
+        isPrime[1] = false;
+
+        int n = isPrime.size();
+        
+        for(int i = 2; i * i < n; i++) // i < sqrt(n)
         {
-            if(n % i == 0)
-                return false;
+            if(isPrime[i])
+            {
+                for(int j = i * i ; j < n; j += i) // j = i * i 
+                    isPrime[j] = false;
+            }   
+            /* 
+            Inner loop : j = i * i and not j = (i + i) or j = (i * 2) because,
+               consider 7 x 2 = 14 
+                        7 x 3 = 21 
+                        7 x 4 = 28 
+                        7 x 5 = 35
+                        7 x 6 = 42 
+                were already marked 'false' by 2, 3, 4, 5 and 6 except for 49 which is 7 itself */
         }
-        return true;
     }
 };
