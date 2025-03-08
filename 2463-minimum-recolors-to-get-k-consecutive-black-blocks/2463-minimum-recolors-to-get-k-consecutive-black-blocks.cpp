@@ -4,24 +4,27 @@ public:
     int minimumRecolors(string blocks, int k) 
     {
         int W = 0;
-        
-        for(int i = 0; i < k; i++)
+        for(int i = 0; i < k; i++) //  Traversing through the First Window.
         {
             if(blocks[i] == 'W') W++;
         }
 
-        return SlidingWindow(blocks, 0, k - 1, W, W);
-    }
+        int minimum = W;
 
-    int SlidingWindow(string& blocks, int left, int right, int W, int minimum)
-    {
-        while(right < blocks.size() - 1)
+        int left = 0;
+        int right = k - 1;
+        
+        while(right < blocks.size() - 1) // Slide the Window...
         {
-            if(blocks[left++] == 'W') W--;
-            if(blocks[++right] == 'W') W++;
+            left++;
+            right++;
 
-            minimum = min(W, minimum);
+            if(blocks[left - 1] == 'W') W--;
+            if(blocks[right] == 'W') W++;
+
+            if(W < minimum) minimum = W;
         }
+
         return minimum;
     }
 };
