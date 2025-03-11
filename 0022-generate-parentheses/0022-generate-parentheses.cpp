@@ -13,21 +13,12 @@ public:
     void construct(int open, int close, int& n, string combinations, vector <string>& result)
     {
         if(open < n)
-        {
-            combinations += '(';
-            construct(open + 1, close, n, combinations, result);
-            combinations.pop_back();
-        }
+            construct(open + 1, close, n, combinations + '(', result);
 
         if(close < open)
-        {
-            combinations += ')';
-            construct(open, close + 1, n, combinations, result);
-        }
+            construct(open, close + 1, n, combinations + ')', result);
 
         if(open == n && close == n) // open == close == n
-        {
             result.push_back(combinations);
-        }
     }
 };
