@@ -1,30 +1,35 @@
 class Solution 
 {
 public:
+
+    stack <int> nums;
+
     int evalRPN(vector<string>& tokens) 
     {
-        stack <int> nums;
-
         for(const string& ch : tokens)
         {
-            if(ch == "+" || ch == "-" || ch == "*" || ch == "/")
-            {
-                int a = nums.top(); nums.pop();
-                int b = nums.top(); nums.pop();
+            if(ch == "+") { do_Ops('+'); continue; }
+            if(ch == "-") { do_Ops('-'); continue; }
+            if(ch == "*") { do_Ops('*'); continue; }
+            if(ch == "/") { do_Ops('/'); continue; }
 
-                switch(ch[0]) // str to char
-                {
-                    case '+' : nums.push(b + a); break;
-                    case '-' : nums.push(b - a); break;
-                    case '*' : nums.push(b * a); break;
-                    case '/' : nums.push(b / a); break;
-                }
-            }
-            else
-            {
-                nums.push(stoi(ch)); // str to int
-            }
+            nums.push(stoi(ch));
         }
+
         return nums.top();
+    }
+
+    void do_Ops(char ch)
+    {
+        int a = nums.top(); nums.pop();
+        int b = nums.top(); nums.pop();
+
+        switch(ch)
+        {
+            case '+' : nums.push(b + a); break;
+            case '-' : nums.push(b - a); break;
+            case '*' : nums.push(b * a); break;
+            case '/' : nums.push(b / a); break;
+        }
     }
 };
