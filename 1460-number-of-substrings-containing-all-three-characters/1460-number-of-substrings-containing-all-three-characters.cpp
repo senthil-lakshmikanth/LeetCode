@@ -4,7 +4,7 @@ public:
     int numberOfSubstrings(string s) 
     {
         int n = s.size();
-        unordered_map <char, int> characters;
+        int characters [3] = {0, 0, 0};
 
         int count = 0;
 
@@ -13,18 +13,14 @@ public:
         {
             if(s[right] == 'a' || s[right] == 'b' || s[right] == 'c')
             {
-                characters[s[right]]++;
+                characters[(s[right] - 'a')]++;
             }
 
-            while(characters.size() == 3)
+            while(characters[0] and characters[1] and characters[2])
             {
                 count += (n - right);
 
-                characters[s[left]]--;
-                if(characters[s[left]] == 0)
-                    characters.erase(s[left]);
-
-                left++;
+                characters[s[left++] - 'a']--;
             }
         }
         return count;
