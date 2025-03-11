@@ -7,11 +7,7 @@ public:
 
         for(const string& ch : tokens)
         {
-            if(ch.size() > 1 || isdigit(ch[0])) // Handling edge cases (negative numbers, multi-digit numbers)
-            {
-                nums.push(stoi(ch)); // str to int
-            }
-            else
+            if(ch == "+" || ch == "-" || ch == "*" || ch == "/")
             {
                 int a = nums.top(); nums.pop();
                 int b = nums.top(); nums.pop();
@@ -23,6 +19,10 @@ public:
                     case '*' : nums.push(b * a); break;
                     case '/' : nums.push(b / a); break;
                 }
+            }
+            else
+            {
+                nums.push(stoi(ch)); // str to int
             }
         }
         return nums.top();
