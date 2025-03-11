@@ -44,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0020-valid-parentheses) |
+| [0022-generate-parentheses](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0022-generate-parentheses) |
 | [0049-group-anagrams](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0125-valid-palindrome) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
@@ -57,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0022-generate-parentheses) |
 | [2107-find-unique-binary-string](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2107-find-unique-binary-string) |
 ## Math
 |  |
@@ -128,6 +130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0022-generate-parentheses) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [1170-shortest-common-supersequence](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1250-longest-common-subsequence) |
