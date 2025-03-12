@@ -10,20 +10,13 @@ public:
 
         for(int i = 0; i < n; i++)
         {
-            if(stack.empty() || temperatures[i] < stack.top().first)
+            while(!stack.empty() && temperatures[i] > stack.top().first)
             {
-                stack.push({temperatures[i], i});
+                auto pair = stack.top();
+                result[pair.second] = i - pair.second;
+                stack.pop();
             }
-            else
-            {
-                while(!stack.empty() && temperatures[i] > stack.top().first)
-                {
-                    auto pair = stack.top();
-                    result[pair.second] = i - pair.second;
-                    stack.pop();
-                }
-                stack.push({temperatures[i], i});
-            }
+            stack.push({temperatures[i], i});
         }
         return result;
     }
