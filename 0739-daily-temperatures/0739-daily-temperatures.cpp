@@ -6,17 +6,16 @@ public:
         int n = temperatures.size();
         vector <int> result (n, 0);
 
-        stack <pair <int, int>> stack; // pair : {temp, index}
+        stack <int> stack; // store only index
 
         for(int i = 0; i < n; i++)
         {
-            while(!stack.empty() && temperatures[i] > stack.top().first)
+            while(!stack.empty() && temperatures[i] > temperatures[stack.top()]) // Access elements by indexing  
             {
-                auto pair = stack.top();
-                result[pair.second] = i - pair.second;
+                result[stack.top()] = i - stack.top();
                 stack.pop();
             }
-            stack.push({temperatures[i], i});
+            stack.push(i);
         }
         return result;
     }
