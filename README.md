@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3227-find-missing-and-repeated-values](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
 | [3463-alternating-groups-i](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3463-alternating-groups-i) |
 | [3483-alternating-groups-ii](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3483-alternating-groups-ii) |
+| [3643-zero-array-transformation-ii](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3643-zero-array-transformation-ii) |
 ## Hash Table
 |  |
 | ------- |
@@ -80,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0268-missing-number) |
 | [0792-binary-search](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0792-binary-search) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
+| [3643-zero-array-transformation-ii](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3643-zero-array-transformation-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -146,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
+| [3643-zero-array-transformation-ii](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3643-zero-array-transformation-ii) |
 ## Two Pointers
 |  |
 | ------- |
