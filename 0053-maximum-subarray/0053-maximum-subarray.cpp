@@ -4,7 +4,7 @@ public:
     int maxSubArray(vector<int>& nums) 
     {
         int prefix_sum = 0;
-        int largest = nums[0];
+        int largest = INT_MIN;
 
         for(int num : nums)
         {
