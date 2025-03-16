@@ -3,28 +3,27 @@ class Solution
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) 
     {
-        int rows = matrix.size();
+        int m = matrix.size();
+        int n = matrix[0].size();
 
-        for(int i = 0; i < rows; i++)
+        int left = 0;
+        int right = m * n - 1;
+
+        while(left <= right)
         {
-            int n = matrix[i].size();
+            int mid = (left + right) / 2;
 
-            int left = 0;
-            int right = n - 1;
+            int i = mid / n;
+            int j = mid % n;
 
-            while(left <= right)
-            {
-                int mid = (left + right) / 2;
-                
-                if(target < matrix[i][mid])
+            if(target > matrix[i][j])
+                left = mid + 1;
+            else
+                if(target < matrix[i][j])
                     right = mid - 1;
                 else
-                    if(target > matrix[i][mid])
-                        left = mid + 1;
-                    else
-                        return true;
-            }
+                    return true;
         }
-        return false;
+        return false;   
     }
 };
