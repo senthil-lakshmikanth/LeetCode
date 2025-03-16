@@ -24,13 +24,10 @@ public:
 
         for(int bananas : piles)
         {
-            if(bananas <= per_hour)
+            time += bananas / per_hour;
+
+            if(bananas % per_hour != 0)
                 time++;
-            else
-                if(bananas % per_hour == 0)
-                    time += bananas / per_hour;
-                else
-                    time += bananas / per_hour + 1;
         }
 
         return time <= hours;
