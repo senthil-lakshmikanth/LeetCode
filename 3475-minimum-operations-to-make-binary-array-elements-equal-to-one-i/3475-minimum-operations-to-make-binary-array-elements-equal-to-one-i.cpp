@@ -11,23 +11,18 @@ public:
         {
             if(nums[i] == 0)
             {
-                nums[i] = 1;
-                nums[i + 1] = flip(nums[i + 1]);
-                nums[i + 2] = flip(nums[i + 2]);
+                nums[i]      = 1;
+                nums[i + 1] ^= 1;
+                nums[i + 2] ^= 1;
 
                 count++;
             }
         }
 
         for(int num : nums)
-            if(num != 1)
+            if(!num)
                 return -1;
 
         return count;    
-    }
-
-    int flip(int num)
-    {
-        return num ? 0 : 1;
     }
 };
