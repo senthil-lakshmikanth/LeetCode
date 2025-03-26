@@ -17,7 +17,7 @@ public:
                 left++;
             }
             substr.insert(s[right]);
-            length = max((right - left) + 1, length);
+            length = max(int(substr.size()), length);
         }
         return length;    
     }
