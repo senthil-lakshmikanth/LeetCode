@@ -15,7 +15,7 @@ public:
             char_count[s[right]]++;
             max_frequency = max(char_count[s[right]], max_frequency); // Top K Frequent Element.
 
-            while(((right - left) + 1) - max_frequency > k) // Length - Most Repeating Element = No. of Replacing elements
+            if(((right - left) + 1) - max_frequency > k) // Length - Most Repeating Element = No. of Replacing elements
             {
                 char_count[s[left]]--;  
                 left++;
