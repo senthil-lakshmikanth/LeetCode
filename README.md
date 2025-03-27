@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2265-partition-array-according-to-given-pivot](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2308-divide-array-into-equal-pairs](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
 | [2478-longest-nice-subarray](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2478-longest-nice-subarray) |
+| [2486-most-frequent-even-element](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2486-most-frequent-even-element) |
 | [2551-apply-operations-to-an-array](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2564-most-profitable-path-in-a-tree](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2564-most-profitable-path-in-a-tree) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
@@ -66,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2107-find-unique-binary-string](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2107-find-unique-binary-string) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2308-divide-array-into-equal-pairs](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
+| [2486-most-frequent-even-element](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2486-most-frequent-even-element) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3227-find-missing-and-repeated-values](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
@@ -237,6 +239,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0229-majority-element-ii) |
 | [0347-top-k-frequent-elements](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [2308-divide-array-into-equal-pairs](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
+| [2486-most-frequent-even-element](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2486-most-frequent-even-element) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 ## Quickselect
 |  |
