@@ -8,20 +8,25 @@ public:
 
         for(const int& num : nums)
         {
-                    if(candidate1 == num)   count1++;
-            else    if(candidate2 == num)   count2++;
-            else    if(count1 == 0)         candidate1 = num,  count1++;
-            else    if(count2 == 0)         candidate2 = num,  count2++;
-            else    count1--,   count2--;
+            if(candidate1 == num)             { count1++;   continue; }
+            if(candidate2 == num)             { count2++;   continue; }
+
+            if(count1 == 0) { candidate1 = num; count1++;   continue; }
+            if(count2 == 0) { candidate2 = num; count2++;   continue; }
+
+            count1--,   count2--;
         }    
 
         count1 = count2 = 0;
 
-        count1 = count(nums.begin(), nums.end(), candidate1);
-        count2 = count(nums.begin(), nums.end(), candidate2);
+        for(const int& num : nums)
+        {
+            if(candidate1 == num)   { count1++; continue; }
+            if(candidate2 == num)   { count2++; continue; }
+        }
 
         int n = nums.size();          vector <int> result;
-        
+
         if(count1 > n / 3)   result.push_back(candidate1);
         if(count2 > n / 3)   result.push_back(candidate2);
 
