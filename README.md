@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0229-majority-element-ii) |
 | [0238-product-of-array-except-self](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0268-missing-number](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -54,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0424-longest-repeating-character-replacement](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
@@ -129,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0049-group-anagrams) |
 | [0169-majority-element](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -231,6 +234,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0229-majority-element-ii) |
 | [0347-top-k-frequent-elements](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [2308-divide-array-into-equal-pairs](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
