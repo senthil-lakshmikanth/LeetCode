@@ -14,16 +14,12 @@ public:
         }
 
         int majorityLeftcount = 0;
-        int majorityRightcount = 0;
-        for(const int& num : nums)
-        {
-            if(num == majorityElement)
-                majorityRightcount++;
-        }
-
-
+        int majorityRightcount = std::count(nums.begin(), nums.end(), majorityElement); /* We used std:: because,
+        we declared a variable int 'count' above and 
+        it clashes with the standard library functions of the same name. */
+        
         int n  = nums.size();
-
+        
         for(int index = 0; index < n; index++)
         {
             if(nums[index] == majorityElement)
