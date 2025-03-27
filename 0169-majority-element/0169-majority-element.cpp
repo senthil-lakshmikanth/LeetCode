@@ -3,24 +3,21 @@ class Solution
 public:
     int majorityElement(vector<int>& nums) 
     {
-        int majorityElement = nums[0];
-        int count = 1;
+        int majorityElement;
+        int count = 0;
 
-        int n = nums.size();
-
-        for(int i = 1; i < n; i++)
+        for(const int& num : nums)
         {
-            if(nums[i] == majorityElement)
+            if(count == 0)
+                majorityElement = num;
+            
+            count += (majorityElement == num) ? 1 : -1; 
+/* 
+            if(majorityElement == num)
                 count++;
             else
-                count--;
-            if(count == 0)
-            {
-                majorityElement = nums[i];
-                count++;
-            }
-
-        }
+                count--;            
+*/      }
         return majorityElement;   
     }
 };
