@@ -11,8 +11,7 @@ public:
 
         for(int pos = 0; pos < n; pos++)
         {
-            if(cost[pos] < min_cost)
-                min_cost = cost[pos];
+            min_cost = min(cost[pos], min_cost);
             
             cost_to_swap[pos] = min_cost;
         }
