@@ -62,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0424-longest-repeating-character-replacement](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
+| [0768-partition-labels](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0768-partition-labels) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
@@ -83,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0125-valid-palindrome) |
 | [0424-longest-repeating-character-replacement](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
+| [0768-partition-labels](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0768-partition-labels) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1170-shortest-common-supersequence](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1250-longest-common-subsequence) |
@@ -149,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0011-container-with-most-water) |
+| [0768-partition-labels](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0768-partition-labels) |
 | [1807-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1807-partitioning-into-minimum-number-of-deci-binary-numbers) |
 | [3001-apply-operations-to-maximize-score](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3001-apply-operations-to-maximize-score) |
 ## Tree
@@ -223,6 +226,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0015-3sum) |
 | [0125-valid-palindrome](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0125-valid-palindrome) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0768-partition-labels](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0768-partition-labels) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2551-apply-operations-to-an-array](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2588-maximum-number-of-points-from-grid-queries) |
