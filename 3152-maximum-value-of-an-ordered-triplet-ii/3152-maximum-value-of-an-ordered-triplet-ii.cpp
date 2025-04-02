@@ -7,18 +7,16 @@ public:
 
         long long maxVal = 0;
 
-        vector <int> maxLeft (n);
-        vector <int> maxRight (n);
+        long long imax = 0;
+        long long dmax = 0;        
 
-        for(int i = 1; i < n - 1; i++)
+        for(int k = 0; k < n; k++)
         {
-            maxLeft[i] = max(nums[i - 1], maxLeft[i - 1]);
-            maxRight[n - 1 - i] = max(nums[n - i], maxRight[n - i]);
+            maxVal = max(dmax * nums[k], maxVal);
+
+            imax = max((long long)nums[k], imax);
+            dmax = max(imax - nums[k], dmax);
         }
-
-
-        for(int j = 1; j < n - 1; j++)
-            maxVal = max((long long)(maxLeft[j] - nums[j]) * maxRight[j], maxVal);
         
         return maxVal;
 
