@@ -100,6 +100,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2107-find-unique-binary-string](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2107-find-unique-binary-string) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
+| [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 ## Backtracking
 |  |
