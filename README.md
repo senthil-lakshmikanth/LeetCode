@@ -118,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0150-evaluate-reverse-polish-notation](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0204-count-primes](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0204-count-primes) |
+| [0258-add-digits](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0258-add-digits) |
 | [0268-missing-number](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0268-missing-number) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
@@ -257,6 +258,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0258-add-digits](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0258-add-digits) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2551-apply-operations-to-an-array](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 ## Heap (Priority Queue)
@@ -308,6 +310,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0204-count-primes) |
+| [0258-add-digits](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/0258-add-digits) |
 | [2610-closest-prime-numbers-in-range](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/2610-closest-prime-numbers-in-range) |
 | [3001-apply-operations-to-maximize-score](https://github.com/senthil-lakshmikanth/LeetCode/tree/master/3001-apply-operations-to-maximize-score) |
 ## Sliding Window
