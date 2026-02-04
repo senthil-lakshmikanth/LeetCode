@@ -1,50 +1,47 @@
-// Online C++ compiler to run C++ program online
-// Given a sentence of string, in that remove the palindrome words and print the
-// remaining.
-// Input:
-// He did a good deed
-// Output:
-// He good
-// Input:
-// Hari speaks malayalam
-// Output:
-// Hari speaks
+// Given a sentence of string, in that remove the palindrome words and print the 
+// remaining. 
+// Input: 
+// He did a good deed 
+// Output: 
+// He good 
+// Input: 
+// Hari speaks malayalam 
+// Output: 
+// Hari speaks 
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-int main() 
+void isPalindrome(string s)
 {
-    
-    string s;
-    cout<<"Enter the string to remove the palindrome words and print : ";
-    getline(cin, s);
+    int left = 0;
+    int right = s.size() - 1;
 
-    string word="";
-    
-    for(int i=0; i<s.length(); i++)
+    bool flag = 0;
+    while (left < right)
     {
-        if(s[i]==' ' || s[i]=='\0')
+        if(s[left++] != s[right--])
+            flag = 1;
+    }
+
+    if(flag)
+        cout << s << " ";
+}
+
+int main()
+{
+    string s = "He did a good deed";
+    string word = "";
+    
+    for(int i = 0; i <= s.size(); i++)
+    {
+        if(s[i] == ' ' || i == s.size())
         {
-            int word_last_index=word.length();
-            for(int j=0; j<word.length()/2; j++)
-            {
-                if(word[j]!=word[word_last_index-1])
-                {
-                    cout<<word;
-                    break;
-                }
-                cout<<" ";
-                word_last_index--;
-            }
-            word="";
+            isPalindrome(word);
+            word = "";
         }
         else
-        {
-            word=word+s[i];
-        }
+            word += s[i];
     }
-    return 0;
 }
