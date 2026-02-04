@@ -1,36 +1,34 @@
-// Online C++ compiler to run C++ program online
+// Java Program to rotate(right) an array 
+// input array:[1,2,3,4,5,6,7] 
+//       rotate:2 
+// output :[3,4,5,6,7,1,2] 
+// input array:[90,45,67,54,32,78] 
+//       rotate:1 
+// output :[45,67,54,32,78,90] 
+
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-int main() 
+int main()
 {
-    int array[6];
-    int rotate;
-    cout<<"Enter 6 elements with space seperated : ";
+    int arr[] = {1,2,3,4,5,6,7};
+    int size = sizeof(arr) / sizeof(arr[0]); 
+    int rotate = 98 % size;
 
-    for(int i=0; i<6; i++)
-        cin >> array[i];
-        
-    cout<<"Enter rotate : ";
-    cin>>rotate;
-    
-    int array_size=sizeof(array)/sizeof(array[0]); //total bytes of array here int=4 bytes * 6 elements = 24 bytes / 4 bytes = 6.
-    
-    for(int i=0; i<rotate; i++)
+    int temp[rotate];
+
+    for(int i = 0; i < size; i++)
     {
-        int temp=array[0];
-        for(int j=0; j<array_size-1; j++)
-        {
-            array[j]=array[j+1];
-        }
-        array[array_size-1]=temp;
+        if(i < rotate)
+            temp[i] = arr[i];
+        else
+            arr[i - rotate] = arr[i];
     }
-    
-    for(int i=0; i<array_size; i++)
-        cout<<array[i]<<" ";
-    
-    
-    return 0;
+
+    for(int i = 0; i < rotate; i++)
+        arr[size - rotate + i] = temp[i];
+
+    for(int i = 0; i < size; i++)
+        cout << arr[i] << " ";    
 }
