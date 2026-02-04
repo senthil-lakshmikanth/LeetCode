@@ -1,57 +1,89 @@
-// Online C++ compiler to run C++ program online
-// Given two strings, the task is to find if a string can be obtained by rotating
-// another string can be obtained by rotating another string by n places.3
-// Examples:
-// Input:
-// String1 = "amazon" String2="azonam" rotateCount=2
-// Output:
-// Yes
-// Explanation :
-// Rotating string1 by 2 places in anti-clockwise given the string2
-// Input:
-// String1 = "amazon" String2="zonama" rotateCount=3
-// Output:
-// Yes
-// Explanation :
-// Rotating string1 by 3 places in clockwise given the string2 
+// Given two strings, the task is to find if a string can be obtained by rotating 
+// another string can be obtained by rotating another string by n places.3 
+// Examples: 
 
+// Input: 
+// String1 = "amazon" String2="azonam" rotateCount=2
+// Output: 
+// Yes 
+// Explanation : 
+// Rotating string1 by 2 places in clockwise given the string2 
+
+// Input: 
+// String1 = "amazon" String2="onamaz" rotateCount=2
+// Output: 
+// Yes 
+// Explanation : 
+// Rotating string1 by 2 places in anti-clockwise given the string2 
+
+// String1 = "amazon" String2="zonama" rotateCount=3        
+// Output: 
+// Yes 
+// Explanation :  
+// Rotating string1 by 3 places in anti-clockwise given the string2 
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-int main() 
+bool clock(string s1, string compare, int rotateCount)
 {
-    
-    string s1;
-    cout<<"Enter string-1 to compare with string-2 : ";
-    getline(cin, s1);
-    string s2;
-    cout<<"Enter string-2 to rotate and compare with string-1 : ";
-    getline(cin, s2);
-    
-    char temp;
-    int flag=1;
-    
-    for(int i=0; i<s1.length(); i++)
+    bool flag = 1;
+
+    string combine = s1 + s1;
+
+    int start = 0 + rotateCount; // Only first 2(rotate_count) letters are omitted and rest 4 letters are considered.
+    int end = s1.size() + rotateCount; // Those 2 omitted letters are added
+
+    // cout<<" \n clock wise rotate : \n";
+    for(int i = start; i < end; i++)
     {
-        temp=s1[0];
-        for(int j=0; j<s1.length()-1; j++)
+        // cout << combine[i] << " - " << compare[i - rotateCount] << "\n";
+
+        if(combine[i] != compare[i - rotateCount])
         {
-            s1[j]=s1[j+1];
+            flag = 0;
+            break;
         }
-        s1[s1.length()-1]=temp;
-        if(s1==s2)
+    }    
+
+    return flag;
+}
+
+bool anti_clock(string s1, string compare, int rotateCount)
+{
+    bool flag = 1;
+    
+    string combine = s1 + s1;
+
+    int start = s1.size() - rotateCount; // First 4 letters are omitted and only last 2(rotate_count) letters are considered
+    int end = s1.size() + start; // (s1.size() - rotateCount) // Those 4 omitted letters are added. 
+
+    // cout<<" \n anti-clock wise rotate : \n";
+    for(int i = start; i < end; i++) // amazon-amazon : onamaz
+    {
+        // cout << combine[i] << " - " << compare[i - (s1.size() - rotateCount)] << "\n";
+
+        if(combine[i] != compare[i - (s1.size() - rotateCount)])
         {
-            cout<<"Yes"<<endl;
-            cout<<"Rotate Count : "<<i+1;
-            flag=0;
+            flag = 0;
             break;
         }
     }
-    if(flag==1)
-        cout<<"The string doesn't match after rotating completely.";
-    
+
+    return flag;
+}
+
+int main()
+{
+    string s1 = "amazon";
+    string s2 = "azonam";
+    int rotateCount = 2 % s1.size();
+
+    if(clock(s1, s2, rotateCount) || anti_clock(s1, s2, rotateCount))
+        cout << "Yes";
+    else
+        cout << "No";
+
     return 0;
 }
