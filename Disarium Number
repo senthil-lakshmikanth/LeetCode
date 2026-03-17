@@ -1,0 +1,49 @@
+// Write a Java program which checks whether given number is Disarium number
+// or not. A number is said to be Disarium if it is equal to sum of its digits raised to
+// the power of their respective position in the number.
+// 135 is a Disarium number. Because, it is equal to sum of its digits raised to the
+// power of their respective position.
+// 135 = 11 + 32 + 53
+// 135 = 1 + 9 + 125
+// 135 = 135 
+
+#include <iostream>
+#include<cmath>
+
+using namespace std;
+
+int Disarium(int n)
+{
+    int temp = n;
+    int count = 0;
+
+    while(temp)
+    {
+        count++;
+        temp /= 10;
+    }
+
+    int sum = 0;
+    while(n)
+    {
+        sum += pow((n % 10), count--);
+        n /= 10;
+    }
+
+    cout << "Sum of digits : " << sum;
+
+    return sum;
+}
+
+int main()
+{
+    int n = 135;
+
+    if(n == Disarium(n))
+        cout << " = " << n << " Yes, it is a Disarium number.";
+    else
+        cout << " != " << n << " No, it is not a Disarium number.";
+
+    return 0;
+}
+
